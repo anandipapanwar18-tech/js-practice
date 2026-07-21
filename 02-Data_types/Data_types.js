@@ -142,3 +142,9 @@
 // }else{
 //     console.log("invaild");
 // }
+
+
+
+// why NaN == number
+// becaues it is failed number operation 
+
