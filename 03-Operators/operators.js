@@ -152,7 +152,26 @@
 
 
 
+// Combined practice
 
+    // let likes=100;
+    
+
+    // function likepost(){
+    //     return ++likes;
+
+    // }
+    // console.log(likepost());
+    // console.log(likes);
+
+
+// let count =5;
+//     if(count-- ===5){
+//         console.log("matched");
+
+//     }else{
+//         console.log("not matched");
+//     }
 
 
 
