@@ -176,6 +176,20 @@
 
 
 
+// console.log("10" + 1);
+// console.log("10" - 1);
+// console.log(true + false);
+// console.log(!!"anandi");
+
+
+
+// unary operatoe Ex
+
+// let str = "42";
+// let num = +str;
+// console.log(num);
+
+
 
 
 
