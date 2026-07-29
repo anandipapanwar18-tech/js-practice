@@ -332,16 +332,84 @@
 
 
 
-// function outer(){
-//         let count=0;
-//         return function(){
-//                 count++;
-//                 console.log(count);
+        // function outer(){
+        //         let count=0;
+        //         return function(){
+        //                 count++;     
+        //                 console.log(count);
 
-//         }
+        //         }
+        // }
+
+
+        // let counter=outer();
+        // counter();
+        // counter();
+
+
+// reverse string 
+
+// const reverseString= function(str){
+
+//         return str.split("").reverse().join("");
+
+// };
+
+// console.log(reverseString("anandi"))
+
+
+
+
+
+
+//im pure function
+        // let total=22;
+        // function demo(amount){        
+        //         return total+=amount;
+        // }
+        // console.log(demo(100))
+
+
+
+// let count = 0;
+
+// function increment() {
+//     count++;
 // }
 
 
-// let counter=outer();
-// counter();
-// counter();
+
+
+// An IIFE is a function that is created and executed immediately after it is defined.
+// Example : Calculate Sum
+
+
+        // (function(a,b){
+        //         console.log(a+b)
+
+        // })(1,2);
+
+
+ // calculete sum of numbers from 1 to 10;
+
+        //  (function(){
+        //         let sum=0;
+        //         for(let i=1;i<=10;i++){
+        //                 sum+=i;
+        //         }
+        //         console.log("sum of numbers from 1 to 10",sum);
+        //  })();
+
+
+        
+
+
+
+        // Hoisting means JavaScript moves declarations to the top of their scope before execution.
+
+
+        // greet();
+
+        // function greet(){
+        //         console.log("hello");
+        // }
