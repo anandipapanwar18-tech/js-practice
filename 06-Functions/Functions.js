@@ -165,3 +165,99 @@
 // demo(10)
 
 // output will be the 10 undefined
+
+
+
+
+
+// Write a function that returns the factorial of a number.
+
+
+                // function factorial(n){
+                //         let fact=1;
+                //         for(let i=1;i<=n;i++)
+                //         fact=fact*i
+                //         console.log(fact);
+                // }
+
+                // factorial(10);
+
+
+
+        // function greet(name ="Anandi"){
+        //         console.log(name);
+        // }
+
+        // greet();
+        // greet("Pratik");
+
+
+
+// Write a calculator function.
+// calculator(a,b,operator="+")
+// If no operator is passed, perform addition.
+
+
+
+                        // function calculator(a,b,operation="+"){
+                        //         switch(operation){
+                        //                 case "+":
+                        //                         return a+b;        
+                        //                 break;
+                        //                 case "-":
+                        //                         return a-b;
+                        //                 break;      
+                        //                  case "*":
+                        //                         return a*b;
+                        //                 break;        
+
+                        //                  case "/":
+                        //                         return a/b;
+                        //                 break;        
+                        //         }
+                        // }
+
+                        // let result=calculator(2,4,"-");
+                        // console.log(result);
+
+
+// rest parameter
+
+
+        // function numbers(...a){
+        //         console.log(a);
+        // }
+
+        // numbers(1,2,3,4,5,6,7,7,8,9,0,-0,4,3,11,22,33,44,55,66,77,88,99,00)
+
+
+
+// Write a function to find the largest number using rest parameters.
+
+
+                // function largest(...a){
+                //         let max=Math.max(...a);
+                //         console.log(max);
+                // }
+
+                // largest(1,23,4,5,6,7,8,89,0,8,54,23,45,23,65,23,432,243,1234,134,2);  
+                
+
+
+// except the number of parementers using rast parameter and return the total
+
+
+                // function  demo(...num){
+                //         let total=0;
+                //         num.forEach(function(val){
+                //                 total+=val;
+                //         });
+                //         return total;
+
+                // }
+
+
+                // console.log(demo(1,2,3,4,5,6,7));
+
+
+
