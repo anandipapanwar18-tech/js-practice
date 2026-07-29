@@ -261,3 +261,87 @@
 
 
 
+// early return
+
+                // function age(a){
+                //         if(a>18) return "eligible";
+                //         return "not eligible";
+                // }
+
+                // let result=  age(22);
+                // console.log(result)
+
+
+// function fun(){
+//         return ;
+// }
+
+// console.log(fun())
+
+
+
+
+
+// pass the function into another function and execite it inside
+        // function animal(val){
+        //         val();
+        // }
+
+
+        // animal(function (){
+        //         console.log("hello")
+        // });
+
+
+
+// higher order function:= higher-order function is a function that either takes one or more functions as arguments or returns a function as its result.
+
+
+// function abcd(){
+//         return function val(){
+//                 console.log("hello its me anandi")
+//         }
+// }
+
+                                // to Calls both the outer and inner function
+// abcd()();
+
+
+
+// pure functions are completely predictable and cause no changes to the outside world,
+// while impure functions can yield different results for the same inputs and produce observable side effects.
+
+
+
+
+// A closure is a feature in JavaScript where an inner function retains 
+// access to the variables and scope of its outer function, even after that 
+// outer function has finished executing
+//   example
+
+
+                // function outer(){
+                //         let num =11;
+                //         return function (){
+                //                 console.log(num)
+                //         }
+                // }
+
+
+                // outer()();
+
+
+
+// function outer(){
+//         let count=0;
+//         return function(){
+//                 count++;
+//                 console.log(count);
+
+//         }
+// }
+
+
+// let counter=outer();
+// counter();
+// counter();
