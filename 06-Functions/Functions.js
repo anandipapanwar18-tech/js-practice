@@ -418,10 +418,10 @@
 // BMI calculator
   
 
-function bmi(w,h){
-        return w/(h*h);
+// function bmi(w,h){
+//         return w/(h*h);
 
-}
+// }
 
 
-console.log(bmi(64,1.7).toFixed(2));
+// console.log(bmi(64,1.7).toFixed(2));
