@@ -31,12 +31,12 @@
 
 // push() – Add to the end
 
-        // let arr = [1, 2];
-        // arr.push(3);
-        // arr[3]=4;
-        // arr[5]=4;
+                // let arr = [1, 2];
+                // arr.push(3);
+                // arr[3]=4;
+                // arr[5]=4;
 
-        // console.log(arr);
+                // console.log(arr);
 
 
 
@@ -52,23 +52,53 @@
                 // console.log(flower);
         
  // unshift() – Add to the beginning
-        // let arr = [1, 2];
-        // arr.unshift(5   );
-        // console.log(arr)
+                // let arr = [1, 2];
+                // arr.unshift(5   );
+                // console.log(arr)
+
+
+
+// slice()-->splice() modifies an array by removing, replacing, or adding elements in place and returns the deleted elements.
+
+                // let a=[1,2,3,4,5,6];       //removing
+                // a.splice(2,1)
+                // console.log(a);
+                // a.splice(2,2,50,60)       //adding
+                // console.log(a);
+                // a.splice(0,0,100)         //replacing
+                // console.log(a);
+
+
+// slice()-->Copy a portion to new array
+
+                // let ar=[1,2,3,4,5,6,7]
+                // let newarr=ar.slice(0,3)
+                
+// Reverse() reverse the array elements
+                // let a=[1,2,3,4,5];
+                // a.reverse()
+// Sort() sort the array elemnts
+                // let a=[1,0,3,2,4,6,3,5];
+                // a.sort()
+
+
+
 
 
 
 // Loop Through an Array
 
 // Using for loop
-        //  let Arr=[1,2,3,4,5];
-        //        for(let i =0;i<Arr.length;i++){
-        //         console.log(Arr[i]);
-        //        }
+                //  let Arr=[1,2,3,4,5];
+                //        for(let i =0;i<Arr.length;i++){
+                //         console.log(Arr[i]);
+                //        }
 
 
-// let fruits = ["Apple", "Banana", "Mango"];
+                // let fruits = ["Apple", "Banana", "Mango"];
 
-// for(let fruit of fruits){
-//     console.log(fruit);
-// }
+                // for(let fruit of fruits){
+                //     console.log(fruit);
+                // }
+
+
