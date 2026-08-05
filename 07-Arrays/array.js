@@ -79,10 +79,24 @@
                 // a.reverse()
 // Sort() sort the array elemnts
                 // let a=[1,0,3,2,4,6,3,5];
-                // a.sort()
+                // // a.sort()
+
+                // let ascendingOrder = a.sort(function(a, b)
+                // { return a - b; });
 
 
 
+                //  let dessendingOrder=a.sort(function(a,b){
+                //         return b-a;
+                // });
+
+
+
+
+// Spread Operator (...)
+// Copy an array
+                //let arr=[1,2,3,4,5,6]
+                //let arr2=[...arr]
 
 
 
@@ -101,4 +115,43 @@
                 //     console.log(fruit);
                 // }
 
+
+// for each ()
+
+                // let arr=[1,2,3,4,5,6,7]
+                // arr.forEach(function(val){
+                //         console.log(val)
+                // });
+
+
+
+
+// Map()    What is map()?
+
+// The map() method creates a new array by applying a function to every element of the original array.
+
+// It does not modify the original array.
+// It always returns a new array.
+// It is used when you want to transform each element.
+                //  let arr=[11,22,33,44,55,66]
+
+                //  let newarr=arr.map(function(val){
+                //     return 77;
+                //  })
+
+
+
+                // let arr=[1,2,2,3,4,56]
+                // let second =arr.map(val=>val * val);
+                // console.log(second)
+
+
+                // let fruits=["apple","mango","banana"]
+                // let toupper=fruits.map(fruit=>fruit.toLocaleUpperCase());
+                // console.log(toupper)
+
+
+                
+                let a=[1,2,3,4,5,6]
+                let newarr=
 
