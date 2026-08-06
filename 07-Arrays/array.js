@@ -98,6 +98,10 @@
                 //let arr=[1,2,3,4,5,6]
                 //let arr2=[...arr]
 
+                //   let arr=[1,2,3,4,5,6]
+                // let arr2=[...arr]
+                // arr2.pop();
+
 
 
 // Loop Through an Array
@@ -154,3 +158,92 @@
                 
               
 
+
+// reduce() in JavaScript is an array method that reduces an array to a single value by applying a callback function to each element.
+
+                // const numbers = [1, 2, 3, 4, 5];
+                // const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+                // console.log(sum); 
+
+
+                    //const nums = [10, 5, 20, 8];
+                    // const max = nums.reduce((acc, curr) => {
+                    //   return curr > acc ? curr : acc;
+                    // }, nums[0]);
+                // console.log(max)
+
+
+
+// The find() method returns the first element in an array that satisfies a given condition.
+
+// If a matching element is found → it returns that element.
+// If no element matches → it returns undefined.
+
+
+                // const numbers = [10, 20, 30, 40, 50];
+                // const result = numbers.find(num => num > 25);
+                // console.log(result);
+
+
+
+                // let a=[2,34,56,78,5,34,6,1]
+                // let result=a.find(num=>num%2==0)
+                // console.log(result)
+
+// some() and every() in JavaScript
+// Both some() and every() are array methods used to test elements against a condition.
+// some() → Checks if at least one element satisfies the condition. (return true or false )
+// every() → Checks if all elements satisfy the condition.
+
+// Some()
+                // let a=[2,34,56,78,5,34,6,1]
+                // let result=a.some(num=>num%2==0)
+                // console.log(result)
+// every
+                //const numbers = [2, 4, 6, 8];
+                // const result = numbers.every(num => num > 0);
+                // console.log(result);
+
+
+
+// Destructuring is a JavaScript feature that lets you extract values from arrays or properties from objects and store them in variables in a simple way.
+
+                // let aa=[1,23,4,5,7];
+                // let [a,b,,d]=aa;
+
+
+
+                // let fruits=["Apple","banana","mango", "graphs"];
+                // let [a,b]=fruits;
+                // console.log(a)
+                // console.log(b)
+
+
+
+                // Without Destructuring
+                // const colors = ["Red", "Green", "Blue"];
+                // const first = colors[0];
+                // const second = colors[1];
+                // const third = colors[2];
+
+                // console.log(first);
+                // console.log(second);
+                // console.log(third);
+
+
+
+                // With Destructuring
+                // const colors = ["Red", "Green", "Blue"];
+                // const [first, second, third] = colors;
+                // console.log(first);
+                // console.log(second);
+                // console.log(third);
+
+
+                // Swap Variables
+
+                // let a=20;
+                // let b=30;
+                // [a,b]=[b,a]
+                // console.log(a)
+                // console.log(b)
