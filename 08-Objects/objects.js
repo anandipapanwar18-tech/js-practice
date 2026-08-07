@@ -22,3 +22,18 @@
 // }
 
 // console.log(user.person.age)
+
+
+// let person={
+//         name:"Anandi",
+//         age:20,
+//         email:"anandi@gmail.com"
+// }
+
+
+// for(let key in person){
+//         console.log(key ,":", person[key])
+// }
+
+
+
