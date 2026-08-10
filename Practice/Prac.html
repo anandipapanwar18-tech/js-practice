@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO LIST</title>
+        <style>
+            /* body{
+                background-color: beige;
+            } */
+            .container{
+               
+
+                   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1 id="heading ">TO DO LIST</h1>
+        <input type="text" placeholder="Enter the tasks"  id="inpt"><br>
+        <button id="btn">Add task</button>
+        </div>
+        <div class="tasklist">
+            
+        </div>
+
+
+
+
+
+        <script>
+                let btn=document.getElementById("btn");
+                let TaskIP=document.getElementById("inpt");
+                let tasklist=document.getElementsByClassName("tasklist");
+
+
+                btn.addEventListener("click" ,function(){
+                    let task=TaskIP.value;
+                    if(task==""){
+                        alert("Please enter the task ");
+                        return;
+                    }
+                })
+        </script>
+    </body>
+</html>
