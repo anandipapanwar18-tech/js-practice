@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            .Demo{
+                color: azure;
+                background-color: blueviolet;
+            }
+            /* .name{
+                background-color: blue;
+            } */
 
+        </style>
     </head>
     <body>
         
-            <h1> Welcome  i am anandi</h1>
+            <h1 class="Demo"> Welcome  i am anandi</h1>
 
-
+            <h2 class="name">anandi</h2>
 
 
 
@@ -25,7 +34,7 @@
             
             // document.body.prepend(h2);
             // document.body.appendChild(h2);
-            // document.querySelector("body").append(h1);
+            // document.querySelector("body").append(h1);  
 
             // let img=document.createElement("img");
             // img.setAttribute("src", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBWYFazCzI4ZamD6KuYXUuj8qtVaOMmNy4-V8oqhT7Q&s=10")
@@ -40,11 +49,31 @@
             // x.style.fontFamily="fantasy";
             // x.style.textTransform="capitalize";
 
-
-
+// In JavaScript, element.classList is a read-only property that returns a live collection (DOMTokenList) of the CSS class attributes of an element, allowing you to easily add, remove, and manipulate classes without rewriting string
+// add(className): Appends one or more new classes to the element.
+// remove(className): Deletes one or more specific classes
+// .toggle(className): Adds the class if it is missing, or removes it if it exists.
+// contains(className): Returns a boolean (true/false) if the class exists on the element.
+// replace(oldClass, newClass): Replaces an existing class with a brand new one.
             // classlist
-            let x=document.querySelector("h1");
-            x.classList=
+            // let a=document.querySelector("h1");
+            // let b= console.log(a.getAttribute("class"));
+            // a.classList.remove("Demo");
+
+            // let a=document.querySelector("h2");
+            // let b= console.log(a.getAttribute("class"));
+            // a.classList.toggle("name");
+
+            // let a=document.querySelector("h2");
+            // // let b= console.log(a.getAttribute("class"));
+            // a.classList.replace('name', 'NEW');
+
+            //  let a=document.querySelector("h2");
+            //  a.classList.contains('hidden'); 
+
+
+
+
 
 
 
