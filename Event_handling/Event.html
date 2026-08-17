@@ -10,6 +10,10 @@
 
         <button id="btn">Click Me</button>
         <p id="text">Hello</p>
+
+
+        <input type="text" placeholder="enter name here" id="input">
+        <!-- <div id="popup"> </div> -->
         <Script>
             // let btn=document.querySelector("#btn");
                     
@@ -19,12 +23,48 @@
 
 
 
-                        let btn = document.getElementById("btn");
-            let text = document.getElementById("text");
+            //             let btn = document.getElementById("btn");
+            // let text = document.getElementById("text");
+        
 
-            btn.addEventListener("click", function() {
-                text.textContent = "Button Clicked!";
+            // btn.addEventListener("click", function() {
+            //     text.textContent = "Button Clicked!";
+            // });
+
+            // let input=document.querySelector("input");
+            // input.setAttribute("id","ipbox");
+            // let pop=document.querySelector("#popup");
+            // input.addEventListener("input",  function(e){
+            //       let value=  e.target.value;
+
+            //       if(value=="ja"){
+            //         pop.innerText="javascript";
+            //       }
+            // });
+
+
+
+
+
+            // let a =document.querySelector("input");
+            // a.addEventListener("input", function(data){
+            //     // console.log(data.target.value);
+            //     //  console.log(data);
+            //     //  console.log(data.Textcontain);
+            //     //  console.log(data.data);
+            // });
+
+
+
+                    let a = document.querySelector("#input");
+
+                        a.addEventListener("input", function(dets) {
+                if (dets.data !== null) {
+                    console.log(dets.data);
+                }
             });
+
+
         </Script>
     </body>
 </html>
