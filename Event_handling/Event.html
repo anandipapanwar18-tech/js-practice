@@ -3,26 +3,106 @@
     <head>
         <style>
 
+            *{
+                margin: 0%;
+                padding: 0%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                box-sizing: border-box;
+
+            }
+
+
+            body{
+                height: 100px;
+                weight: 100px;
+            }
+
+            .main{
+
+            }
+
+
+
+/* 
+            for h1 of select
+            h1{
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                user-select: none;
+            } */
+               select {
+    width: 25%;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+
+        #main{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input{
+            display :none;
+
+        }
+
+#btn {
+    background-color: violet;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 22px;
+    margin: 50px;
+    color: aliceblue;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+        #btn:hover{
+            background-color:rgb(48, 11, 78) ;
+            cursor: pointer;
+        }
+
+
         </style>
     </head>
     <body>
         <!-- <button id="btn">Click Me</button> -->
 
-        <button id="btn">Click Me</button>
+        <!-- <button id="btn">Click Me</button> -->
         <p id="text">Hello</p>
 
 
-        <input type="text" placeholder="enter name here" id="input">
+        <!-- <input type="text" placeholder="enter name here" id="input"> -->
         <!-- <div id="popup"> </div> -->
 
 
         <h1>Select the device</h1>
-        <select >
+        
+        <select>
             <option selected disabled>choose</option>
-            <option value="">apple</option>
-            <option value="">Oppo</option>
-            <option value="">samsung</option>
+            <option>apple</option>
+            <option value="Oppo">Oppo</option>
+            <option value="samsung">samsung</option>
         </select>
+    
+
+        <h2>I am anandi </h2>
+
+
+<div id="main"> 
+    <input type="file" id="filein"> 
+
+    <div id="btn">
+        upload file
+    </div>
+</div>
+
         <Script>
             // let btn=document.querySelector("#btn");
                     
@@ -79,15 +159,40 @@
             // let a=document.querySelector("h1");
             // let b=document.querySelector("select")
             // b.addEventListener("change", function(e){
-            //     a.textContent="Device selected " ;
+            //     a.textContent=`${e.target.value} Device selected` ;
             // });
 
 
 
+            // let a = document.querySelector("h1");
+            // let b = document.querySelector("select");
+
+            // b.addEventListener("change", function(e) {
+            //     a.textContent = `${e.target.value} Device selected`;
+            // });
 
 
 
+            
 
+
+            // let h2= document.querySelector("h2");
+            // window.addEventListener("keydown",function(e){
+            //     h2.textContent= e.key;
+            // })
+            
+
+
+        let btn = document.querySelector("#btn");
+let filein = document.querySelector("#filein");
+
+btn.addEventListener("click", function(e) {
+    filein.click();
+});
+
+filein.addEventListener("change", function(a) {
+    console.log(a.target.files[0].name);
+});
         </Script>
     </body>
 </html>
