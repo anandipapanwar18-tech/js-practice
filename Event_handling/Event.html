@@ -186,21 +186,31 @@
         let btn = document.querySelector("#btn");
 let filein = document.querySelector("#filein");
 
-btn.addEventListener("click", function(e) {
+btn.addEventListener("click", function() {
     filein.click();
 });
 
 filein.addEventListener("change", function(a) {
-    console.log(a.target.files[0].name);
+    // console.log(a.target.files[0].name);
+    // btn.textContent=a.target.files[0].name;
+
+        btn.textContent=a.target?.files[0].name;
+
 });
 
 
 
-let text = document.getElementById("text");
+// let text = document.getElementById("text");
 
-text.addEventListener("mouseout", function() {
-    text.innerText = "Mouse moved away!";
-});
+// text.addEventListener("mouseout", function() {
+//     text.innerText = "Mouse moved away!";
+// });
+
+
+
+
+
+''
         </Script>
     </body>
 </html>
