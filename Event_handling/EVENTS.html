@@ -72,26 +72,111 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-          
-        </style>
-    </head>
-    <body>
-        
-        
-        <form action="">
-            <input type="text" placeholder="enter the name">
-            <input type="text" placeholder="enter the AGE">
-            <input type="text" placeholder="enter the email">
-            <input type="text" placeholder="enter the name">
-            <button type="submit">submit</button>
-        </form>
+<head>
+    <title>JS Events Practice</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        #box {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <h2 id="title">My Profile</h2>
+
+        <input id="nameInput" type="text" placeholder="Enter your name">
+
+        <br>
+
+        <select id="color">
+            <option value="white">White</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="lightgreen">Light Green</option>
+        </select>
+
+        <br>
+
+        <button id="btn">Click Me</button>
+
+        <p id="output"></p>
+    </div>
 
 
-        <script>
+    <script>
+
+        let box = document.querySelector("#box");
+        let btn = document.querySelector("#btn");
+        let nameInput = document.querySelector("#nameInput");
+        let color = document.querySelector("#color");
+        let output = document.querySelector("#output");
 
 
-        </script>
-    </body>
+        // 1. CLICK EVENT
+        btn.addEventListener("click", function() {
+            output.textContent = "Button clicked!";
+        });
+
+
+        // 2. DOUBLE CLICK EVENT
+        btn.addEventListener("dblclick", function() {
+            output.textContent = "Button double clicked!";
+        });
+
+
+        // 3. MOUSEOVER EVENT
+        box.addEventListener("mouseover", function() {
+            box.style.borderColor = "red";
+        });
+
+
+        // 4. MOUSEOUT EVENT
+        box.addEventListener("mouseout", function() {
+            box.style.borderColor = "black";
+        });
+
+
+        // 5. INPUT EVENT
+        nameInput.addEventListener("input", function() {
+            output.textContent = "Hello " + nameInput.value;
+        });
+
+
+        // 6. CHANGE EVENT
+        color.addEventListener("change", function() {
+            box.style.backgroundColor = color.value;
+        });
+
+
+        // 7. KEYDOWN EVENT
+        nameInput.addEventListener("keydown", function(e) {
+
+            if (e.key === "Enter") {
+                output.textContent = "You pressed Enter!";
+            }
+
+        });
+
+    </script>
+
+</body>
 </html>
