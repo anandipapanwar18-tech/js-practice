@@ -15,7 +15,7 @@
             .container{
                 width: 400px;
               padding: 30px;
-                margin: 100px, auto;
+                
                 border:2px solid black;
                 
             }
@@ -70,21 +70,32 @@
         let age =document.getElementById('age');
 
 
-        dobinput=addEventListener(change, function(){
+        dobinput=addEventListener('change', function(){
            let dbvalue= dobinput.value;
            if(!dbvalue){
             age.value= '';
             return;
 
            }
-        })
+       
 
 
-        let dbdate=new date(dobinput);
-        let today=new date();
+        let dbdate=new Date(dobinput);
+        let today=new Date();
 
+
+        let Age= today.getFullYear()-dbdate.getFullYear();
+        let monthdif= today.getMonth()- dbdate.getMonth()
+
+
+        if(monthdif<0 || (monthdif ==0 && today.getDate()< dbdate.getDate()){
+            Age--;
+        }
         
-        
+        formsage.value =Age>=0? Age: 0;
+
+
+         });
     </script>
     </body>
 
