@@ -31,17 +31,61 @@
 
             }
 
+            label{
+                align-items: flex-start;
+                text-align: left;
+            }   
+
             
         </style>
     </head>
     <body>
         <div class="container"> 
-        <Form id="form">
-            <input type="text" placeholder="Enter the name" id="name">
-            <input type="number" placeholder="Enter the age" id="age">
+            <fieldset>
+                 <legend>User personal information</legend>
+        <Form id="form" name="USER PERSONAL INFORMATION">
+            <label>Enter the name</label>
+            <input type="text" placeholder="Enter the name" id="Name">
+            <label>Enter the Email</label>
+            <input type="text" placeholder="Enter the age" id="Email">
+            <label>Enter the Phone_NO</label>
+            <input type="numbaer" placeholder="Enter the Phone number" id="Phone">
+            <label>Enter the DOB</label>
+            <input type="date"  id="DOB">
+            <label>AGE</label>
+            <input type="text"  id="age">
+
             <button>Submit</button>
         </Form>
+        </fieldset>
     </div>
+
+
+
+    <script>
+        let nm =document.getElementById('Name').value;
+        let email =document.getElementById('Email').value;
+        let ph =document.getElementById('phone').value;
+        let dob =document.getElementById('DOB');
+        let age =document.getElementById('age');
+
+
+        dobinput=addEventListener(change, function(){
+           let dbvalue= dobinput.value;
+           if(!dbvalue){
+            age.value= '';
+            return;
+
+           }
+        })
+
+
+        let dbdate=new date(dobinput);
+        let today=new date();
+
+        
+        
+    </script>
     </body>
 
 </html>
